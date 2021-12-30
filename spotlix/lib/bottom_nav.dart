@@ -19,18 +19,24 @@ class _BottomNav extends State<BottomNav> {
             IconButton(
               tooltip: 'Open navigation menu',
               icon: const Icon(Icons.menu),
-              onPressed: () {},
+              onPressed: () {
+                debugPrint("Nav menu");
+              },
             ),
             const Spacer(),
             IconButton(
               tooltip: 'Search',
               icon: const Icon(Icons.search),
-              onPressed: () {},
+              onPressed: () {
+                debugPrint("Search");
+              },
             ),
             IconButton(
               tooltip: 'Favorite',
               icon: const Icon(Icons.favorite),
-              onPressed: () {},
+              onPressed: () {
+                debugPrint("Favorite");
+              },
             ),
           ],
         ),

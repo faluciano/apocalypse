@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'bottom_nav.dart';
+import 'card.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -24,10 +25,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // Generate 100 widgets that display their index in the List.
         children: List.generate(100, (index) {
           return Center(
-            child: Text(
-              'Item $index',
-              style: Theme.of(context).textTheme.headline5,
-            ),
+            child: MyCard(number: index + 1),
           );
         }),
       ),
